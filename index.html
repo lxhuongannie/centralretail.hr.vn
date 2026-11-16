@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposal Central Retail — Zalo Recruitment Solution Tết 2027</title>
+<style>
+:root{--blue:#0068FF;--navy:#0B2A5B;--bg:#F4F6F9;--card:#fff;--tx:#1F2937;--tx2:#4B5563;--mut:#9CA3AF;--bd:#E5E7EB;--ok:#10B981;--okl:#ECFDF5;--warn:#F59E0B;--warnl:#FFFBEB;--no:#6B7280;--nol:#F3F4F6;--acc:#E8F1FF;--font:'Segoe UI',-apple-system,Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:var(--bg);color:var(--tx);line-height:1.5}
+header{background:linear-gradient(135deg,#0047AB,#0B1B3A);color:#fff;padding:20px 32px}
+header small{opacity:.8;letter-spacing:.5px;font-size:12px;text-transform:uppercase}
+header h1{font-size:22px;margin-top:4px}
+header p{opacity:.85;font-size:13px;margin-top:2px}
+nav{display:flex;gap:4px;padding:0 24px;background:#fff;border-bottom:1px solid var(--bd);overflow-x:auto;position:sticky;top:0;z-index:5}
+nav button{border:0;background:none;padding:14px 12px;font:600 13.5px var(--font);color:var(--tx2);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+nav button:hover{color:var(--blue)}
+nav button.on{color:var(--blue);border-color:var(--blue)}
+main{max-width:1120px;margin:0 auto;padding:28px 24px 60px}
+.tab{display:none}.tab.on{display:block}
+h2{font-size:20px;margin-bottom:6px}
+h3{font-size:15px;margin-bottom:8px}
+.lead{color:var(--tx2);margin-bottom:20px;max-width:840px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px 20px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.pill{display:inline-block;font-size:12px;font-weight:600;border-radius:99px;padding:3px 10px}
+.p-ok{background:var(--okl);color:#047857}.p-warn{background:var(--warnl);color:#B45309}.p-no{background:var(--nol);color:var(--no)}.p-b{background:var(--acc);color:var(--blue)}
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--bd);border-radius:12px;overflow:hidden}
+th{background:#F9FAFB;text-align:left;padding:10px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--tx2)}
+td{padding:10px 12px;border-top:1px solid var(--bd);vertical-align:middle}
+ul{padding-left:20px}li{margin:4px 0}
+.note{font-size:12px;color:var(--mut);margin-top:10px}
+.btn{border:1px solid var(--bd);background:#fff;border-radius:8px;padding:8px 14px;font:600 13px var(--font);cursor:pointer}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.chips{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--bd);background:#fff;border-radius:99px;padding:6px 14px;font:600 13px var(--font);cursor:pointer}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+/* journey */
+.detail{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.detail h4,.sub{font-size:12px;text-transform:uppercase;color:var(--mut);letter-spacing:.5px;margin-bottom:4px}
+.qr{display:none!important}
+.jflow{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 36px;margin-bottom:18px}
+.jc{position:relative;background:#fff;border:2px solid var(--bd);border-radius:14px;padding:10px;text-align:left;font:inherit;cursor:pointer}
+.jc:hover{border-color:#9CC2FF}.jc.on{border-color:var(--blue);background:var(--acc)}.jc.key{box-shadow:0 0 0 3px rgba(0,104,255,.12)}
+.jc::after{content:'➜';position:absolute;right:-28px;top:50%;margin-top:-12px;font-size:20px;color:var(--blue)}
+.jc:nth-child(3n)::after,.jc:last-child::after{content:''}
+.jc:nth-child(3)::before{content:'⤵ tiếp theo';position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);font-size:12px;color:var(--blue);font-weight:600}
+.jm{height:176px;background:#E9EEF5;border-radius:10px;padding:8px;font-size:10.5px;line-height:1.35;overflow:hidden;display:flex;flex-direction:column;gap:5px}
+.jt{display:flex;gap:8px;align-items:center;margin-top:8px}.jt b{background:var(--navy);color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px;flex:none}.jt span{font-weight:700;font-size:14px}
+.js{font-size:12px;color:var(--tx2);margin-top:2px}
+.mb.ads{background:linear-gradient(135deg,#FF6B2C,#E4002B);color:#fff;border-radius:8px;padding:12px 8px;text-align:center}.mb.ads b{display:block;font-size:13px}.mb.ads span{display:block;font-size:10px;margin-top:2px}.mb.ads.sm{padding:6px}.mb.ads.sm b{font-size:11px}
+.mb .cta{display:inline-block;margin-top:8px;background:#fff;color:#E4002B;border-radius:99px;padding:3px 12px;font-weight:700}
+.bub{background:#fff;border-radius:8px;padding:5px 7px;align-self:flex-start;max-width:92%}
+.li{background:#fff;border-radius:8px;overflow:hidden;align-self:flex-start;width:92%}.li div{padding:5px 8px;border-top:1px solid var(--bd);display:flex}.li div:first-child{border-top:0}.li i{margin-left:auto;font-style:normal;color:var(--mut)}
+.sp{font-size:10px;color:var(--tx2);margin-top:auto}
+.gfm{background:#F0EBF8;border-radius:8px;padding:5px;display:flex;flex-direction:column;gap:4px;height:100%}.gfm .gt{background:#fff;border-top:5px solid #673AB7;border-radius:6px;padding:5px 7px;font-weight:700}.gfm .gq{background:#fff;border-radius:6px;padding:4px 7px}.gfm .gb{background:#673AB7;color:#fff;border-radius:5px;padding:2px 12px;align-self:flex-start;font-weight:600}
+.mt{width:100%;border-collapse:collapse;font-size:9.5px;background:#fff;border:0}.mt th{background:#E8F5E9;padding:3px 4px;font-size:9px;text-transform:none;letter-spacing:0;color:var(--tx)}.mt td{padding:3px 4px;border-top:1px solid var(--bd)}.mt tr.new td{background:var(--warnl)}
+.zmini{background:#fff;border-radius:8px;padding:6px 8px;border-left:4px solid var(--blue)}.zmini.ok{border-left-color:var(--ok)}
+/* ops */
+.roles{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.role{border:1px solid var(--bd);background:#fff;border-radius:99px;padding:8px 16px;font:600 14px var(--font);cursor:pointer}
+.role.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.flow{display:flex;flex-direction:column;gap:8px}
+.fl{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:#fff;opacity:.45;transition:.2s}
+.fl.hl{opacity:1;border-color:var(--blue);background:var(--acc)}
+.fl i{font-style:normal;background:var(--navy);color:#fff;border-radius:50%;min-width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+/* phone */
+.phone{width:310px;height:620px;border:10px solid #111827;border-radius:36px;background:#fff;display:flex;flex-direction:column;overflow:hidden;margin:0 auto;box-shadow:0 10px 30px rgba(0,0,0,.18);flex:none}
+.ph-h{background:#fff;border-bottom:1px solid var(--bd);padding:10px 12px;display:flex;gap:10px;align-items:center}
+.av{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+.ph-h b{font-size:13.5px;display:block}.ph-h small{font-size:11px;color:var(--ok)}
+.chat{flex:1;overflow-y:auto;background:#E9EEF5;padding:10px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:84%;padding:8px 11px;border-radius:14px;font-size:13px;white-space:pre-line;line-height:1.4}
+.m.bot{background:#fff;align-self:flex-start;border-top-left-radius:4px}
+.m.me{background:#C9E0FF;align-self:flex-end;border-top-right-radius:4px}
+.inp{display:flex;gap:6px;padding:8px;border-top:1px solid var(--bd);background:#fff}
+.inp input{flex:1;border:1px solid var(--bd);border-radius:99px;padding:7px 12px;font:13px var(--font);outline:none}
+.inp button{border:0;background:var(--blue);color:#fff;border-radius:99px;padding:0 14px;font-weight:600;cursor:pointer}
+.lm{align-self:flex-start;width:88%;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+.lm button{display:flex;gap:8px;align-items:center;width:100%;text-align:left;border:0;border-top:1px solid var(--bd);background:#fff;padding:10px 12px;font:13px var(--font);cursor:pointer}.lm button:first-child{border-top:0}.lm button:hover{background:var(--acc)}
+.lm button i{margin-left:auto;font-style:normal;color:var(--mut);font-size:16px}.lm.used button{pointer-events:none;opacity:.45}.lm.used button.sel{opacity:1;background:var(--acc)}
+.banner{align-self:stretch;background:linear-gradient(135deg,#FF6B2C,#E4002B);color:#fff;border-radius:12px;padding:18px 12px;text-align:center}.banner b{display:block;font-size:18px;letter-spacing:.5px}.banner span{display:block;font-size:12.5px;margin-top:4px}.banner em{display:block;font-style:normal;font-size:11px;opacity:.9;margin-top:8px}
+.gf{width:96%;align-self:flex-start;background:#F0EBF8;border-radius:10px;overflow:hidden;font-size:12px;padding-bottom:6px}
+.gf-top{background:#fff;color:var(--mut);font-size:10px;padding:4px 8px;border-bottom:1px solid var(--bd)}
+.gf-h{background:#fff;border-top:8px solid #673AB7;border-radius:8px;margin:8px;padding:10px}.gf-h b{font-size:14px;display:block}.gf-h .pre{margin-top:6px;color:#673AB7;font-weight:600;font-size:11px}
+.gf-q{background:#fff;border-radius:8px;margin:8px;padding:10px}.gf-q label.t{display:block;font-weight:600;margin-bottom:5px}.gf-q sup{color:#D93025}
+.gf-q input[type=text],.gf-q select{width:100%;border:0;border-bottom:1px solid #CBD5E1;padding:4px 2px;font:12.5px var(--font);outline:none;background:transparent}
+.gf-q .rd{display:flex;gap:6px;align-items:center;margin:4px 0}
+.gf button{margin:4px 8px 4px;background:#673AB7;color:#fff;border:0;border-radius:6px;padding:7px 18px;font:600 12.5px var(--font);cursor:pointer}
+.gf .err{color:#D93025;font-size:11px;margin:0 10px;min-height:4px}
+.panel{flex:1;min-width:300px}
+.tag{display:inline-block;background:var(--acc);color:var(--blue);border-radius:6px;padding:2px 8px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.rulebox{background:var(--warnl);border:1px solid #FDE68A;border-radius:10px;padding:10px 12px;font-size:13px;min-height:48px}
+.xl{font-size:12px;border:1px solid var(--bd);border-radius:8px;overflow:hidden}
+.xl table{border:0;font-size:12px}.xl td,.xl th{padding:5px 8px;white-space:nowrap}
+.scn{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.scn .card{padding:12px 14px;font-size:13px}.scn b{display:block;margin-bottom:4px;font-size:13px}.scn p{background:#F9FAFB;border-radius:8px;padding:8px;white-space:pre-line;color:var(--tx2)}
+/* zns */
+.zns{width:310px;border:1px solid var(--bd);border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.zns .zh{display:flex;gap:8px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--bd);font-size:12px}
+.zns .zh b{font-size:13px;display:block}.zns .zh em{font-style:normal;background:var(--acc);color:var(--blue);border-radius:4px;padding:1px 6px;font-size:10.5px;font-weight:700;margin-left:4px}
+.zns .zb{padding:12px;font-size:13px;white-space:pre-line}
+.zns .zt{font-weight:700;font-size:14px;margin-bottom:6px}
+.zns .zbtn{margin:0 12px 12px;text-align:center;border:1px solid var(--blue);color:var(--blue);border-radius:8px;padding:7px;font-weight:600;font-size:13px}
+.pf{display:grid;grid-template-columns:140px 1fr;gap:6px 10px;align-items:center;font-size:13px;margin-top:8px}
+.pf input,.pf select{border:1px solid var(--bd);border-radius:6px;padding:5px 8px;font:13px var(--font);width:100%}
+.pf code{background:var(--nol);border-radius:4px;padding:1px 5px;font-size:12px}
+/* gmf */
+.gm{max-width:340px;border:1px solid var(--bd);border-radius:14px;overflow:hidden;background:#fff}
+.gm .gh{padding:10px 12px;border-bottom:1px solid var(--bd);font-size:13px}.gm .gh small{display:block;color:var(--mut);font-size:11px}
+.gm .gc{background:#E9EEF5;padding:10px;display:flex;flex-direction:column;gap:6px}
+.gm .m{font-size:12.5px}.gm .nm{font-size:10.5px;color:var(--mut);margin-bottom:1px}
+/* budget */
+.bz{font-size:13.5px}
+.bz input[type=text],.bz input[type=number]{border:1px solid var(--bd);border-radius:6px;padding:5px 8px;font:13px var(--font);width:100%;text-align:right}
+.drv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:14px}
+.drv label{font-size:12px;font-weight:600;color:var(--tx2);display:block;margin-bottom:3px}
+.drv input{border:1px solid var(--bd);border-radius:8px;padding:7px 10px;font:600 15px var(--font);width:100%}
+.bz td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bz td.in{width:110px}.bz td.in.p{width:120px}
+.bz tr.sec td{background:#F9FAFB;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--tx2)}
+.bz tr.tot td{background:var(--acc);font-weight:700;font-size:15px}
+.bz .free{color:#047857;font-weight:600}
+.bz .rst{border:0;background:none;color:var(--blue);cursor:pointer;font-size:14px;padding:0 4px}
+.stack{display:flex;height:22px;border-radius:6px;overflow:hidden;margin:6px 0 10px;background:var(--nol)}
+.stack div{transition:width .15s}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:14px}
+.kp .card b{display:block;font-size:20px;color:var(--navy)}.kp .card span{font-size:12px;color:var(--tx2)}
+.row{display:grid;grid-template-columns:150px 1fr 46px 120px;gap:10px;align-items:center;font-size:13px;margin:6px 0}
+.row input[type=range]{width:100%;accent-color:var(--blue)}
+.row .a{text-align:right;color:var(--tx2)}.row .p{font-weight:700;text-align:right}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ph{background:#fff;border:2px solid var(--bd);border-radius:12px;padding:14px}
+.ph.main{border-color:var(--blue);background:var(--acc)}
+.ph h4{font-size:15px}.ph .d{color:var(--tx2);font-size:12px;margin-bottom:8px}
+.gate{font-size:12px;color:#B45309;background:var(--warnl);border-radius:8px;padding:6px 8px;margin-top:8px}
+@media(max-width:860px){.jflow{grid-template-columns:1fr 1fr}.jc:nth-child(3n)::after{content:'➜'}.jc:nth-child(2n)::after{content:''}.jc:nth-child(3)::before{content:''}}
+@media(max-width:560px){.jflow{grid-template-columns:1fr}.jc::after{content:''!important}}
+@media(max-width:760px){.tl{grid-template-columns:1fr}header{padding:16px}main{padding:20px 16px}.row{grid-template-columns:1fr 1fr}.row input{grid-column:1/-1}}
+
+.zwrap{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:start}
+.zrow{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px 12px;border:1px solid var(--bd);border-radius:12px;padding:12px 30px 10px 12px;margin-bottom:10px;cursor:pointer;background:#fff}
+.zrow.act{border-color:var(--blue);background:var(--acc)}
+.zrow label{display:block;font-size:11px;font-weight:600;color:var(--tx2);margin-bottom:3px}
+.zrow input[type=text],.zrow input[type=number],.zrow select{width:100%;border:1px solid var(--bd);border-radius:6px;padding:5px 7px;font:12.5px var(--font);background:#fff}
+.zdel{position:absolute;right:8px;top:6px;border:0;background:none;font-size:18px;cursor:pointer;color:var(--mut)}
+.zopts{display:flex;flex-direction:column;gap:3px}.chk{display:flex!important;gap:6px;align-items:center;font-weight:400!important}
+.zout{grid-column:1/-1;display:flex;gap:12px;align-items:baseline;border-top:1px dashed var(--bd);padding-top:6px}.zout b{font-size:15px;color:var(--navy)}.zout small{color:var(--tx2)}
+.zprev{position:sticky;top:60px}.zprev .zns{width:100%}.pvcap{font-size:12px;color:var(--tx2);margin-top:8px;text-align:center}
+.zimg{background:linear-gradient(135deg,#C7D2FE,#E0E7FF);height:80px;display:flex;align-items:center;justify-content:center;color:#4338CA;font-size:12px;font-weight:600}
+.fld{display:grid;grid-template-columns:1fr 130px;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--bd);font-size:13px}.fld:first-of-type{border-top:0}.fld small{display:block;color:var(--mut);font-size:11px}
+.fld input[type=number],.fld select{border:1px solid var(--bd);border-radius:6px;padding:5px 7px;font:13px var(--font);width:100%;text-align:right}.fld select{text-align:left}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.bar{display:flex;height:16px;border-radius:6px;overflow:hidden;margin-top:12px;background:var(--nol)}.bar span{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;margin-top:8px;color:var(--tx2)}.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+#bTable td.num,#bTable th.num{text-align:right;white-space:nowrap}#bTable tr.tot td{background:var(--acc);font-weight:700}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}.kp .card b{display:block;font-size:20px;color:var(--navy)}.kp .card span{font-size:12px;color:var(--tx2)}
+.row{display:grid;grid-template-columns:150px 1fr 46px 120px;gap:10px;align-items:center;font-size:13px;margin:6px 0}.row input[type=range]{width:100%;accent-color:var(--blue)}.row .a{text-align:right;color:var(--tx2)}.row .p{font-weight:700;text-align:right}
+.os{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:10px 0 14px}.os div{background:var(--acc);border-radius:10px;padding:8px 10px;font-size:13px;font-weight:600;display:flex;gap:8px;align-items:center}.os i{font-style:normal;background:var(--navy);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:11px;flex:none}
+.sg{display:flex;flex-direction:column;gap:6px}.sg div{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--mut)}.sg i{font-style:normal;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:11px;flex:none;color:var(--tx2)}.sg .dn{color:var(--tx)}.sg .dn i{background:var(--ok);border-color:var(--ok);color:#fff}.sg .cur{color:var(--tx);font-weight:700}.sg .cur i{border-color:var(--blue);background:var(--blue);color:#fff}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(0,104,255,.45)}70%{box-shadow:0 0 0 8px rgba(0,104,255,0)}100%{box-shadow:0 0 0 0 rgba(0,104,255,0)}}
+.lm button.hint{background:#EEF5FF;animation:pl 1.4s infinite;font-weight:600}
+@media(max-width:900px){.zwrap,.grid2{grid-template-columns:1fr}.zprev{position:static}}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:6px}
+.stat b{display:block;font-size:28px;color:var(--navy);line-height:1.2}.stat span{font-size:13px;color:var(--tx2)}
+.ovflow{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:8px}
+.ovs{position:relative;background:#fff;border:2px solid var(--bd);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ovs::after{content:'➜';position:absolute;right:-26px;top:50%;margin-top:-12px;font-size:20px;color:var(--blue)}
+.ovs:last-child::after{content:''}
+.ovs .n{background:var(--navy);color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.ovs h4{font-size:17px}.ovs p{font-size:13.5px;color:var(--tx2);flex:1}.ovs .tg{display:flex;gap:6px;flex-wrap:wrap}
+.ovs a,.oldlane a,.ovt a{color:var(--blue);font-weight:600;font-size:13px;text-decoration:none}.ovs a:hover,.oldlane a:hover,.ovt a:hover{text-decoration:underline}
+.oldlane{margin-top:14px;background:var(--warnl);border:1px dashed #F59E0B;border-radius:12px;padding:10px 14px;font-size:13.5px}
+.ovt td:last-child{white-space:nowrap}
+@media(max-width:900px){.ovflow{grid-template-columns:1fr 1fr}.ovs:nth-child(2n)::after{content:''}}
+@media(max-width:560px){.ovflow{grid-template-columns:1fr}.ovs::after{content:''!important}}
+.jc.dim{opacity:.3}.rl{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}.rl .pill{font-size:11px;padding:2px 8px}
+</style>
+</head>
+<body>
+<header>
+<small>Zalo Business Solutions · Solution Proposal</small>
+<h1>Zalo Recruitment Solution — Tuyển dụng thời vụ Tết 2027</h1>
+<p>Dành cho Central Retail Vietnam (GO! · MiniStop · Tops Market) · Draft v5 · bản minh họa minh họa, không phải dữ liệu thật</p>
+</header>
+<nav id="nav"></nav>
+<main>
+
+<section class="tab" id="t-overview">
+<h2>Tổng quan</h2>
+<p class="lead">Central Retail cần tuyển 4.000 nhân sự thời vụ trước 28 Tết. Giải pháp đề xuất: ứng viên đi <b>một đường duy nhất trên Zalo</b>, dữ liệu về <b>một file duy nhất</b>, mỗi chi nhánh có <b>một HR phụ trách</b>.</p>
+
+<div class="sub">1 · Bối cảnh</div>
+<div class="stats">
+<div class="card stat"><b>4.000</b><span>nhân sự thời vụ cần tuyển</span></div>
+<div class="card stat"><b>~80</b><span>chi nhánh (GO!, MiniStop, Tops Market)</span></div>
+<div class="card stat"><b>2 đợt</b><span>tuyển dụng</span></div>
+<div class="card stat"><b>04/02/2027</b><span>hạn chót (28 Tết)</span></div>
+</div>
+
+<div class="sub" style="margin-top:26px">2 · Giải pháp trong một hình: ứng viên đi qua 4 chặng</div>
+<div class="ovflow">
+<div class="ovs"><div class="n">1</div><h4>Thu hút</h4><p>Quảng cáo nhắm theo khu vực của từng cụm chi nhánh. Ứng viên bấm nhắn tin vào Zalo OA.</p><div class="tg"><span class="pill p-b">Zalo Ads</span></div><a href="#" onclick="show('journey');return false">Xem hành trình →</a></div>
+<div class="ovs"><div class="n">2</div><h4>Tiếp nhận</h4><p>Chatbot cho chọn khu vực, vị trí, rồi điền Google Form (chọn GO! hoặc Tops Market). Dữ liệu tự vào file.</p><div class="tg"><span class="pill p-b">Zalo OA</span><span class="pill p-b">Google Form</span></div><a href="#" onclick="show('oa');return false">Thử chatbot →</a></div>
+<div class="ovs"><div class="n">3</div><h4>Phân luồng</h4><p>HR Admin lọc theo khu vực và chi nhánh, phân công cho HR phụ trách. Không còn lead thất lạc.</p><div class="tg"><span class="pill p-b">Google Sheet / Excel</span></div><a href="#" onclick="show('journey');return false">Xem vai trò từng bên →</a></div>
+<div class="ovs"><div class="n">4</div><h4>Chăm sóc</h4><p>Tự động báo xác nhận hồ sơ, lịch phỏng vấn, kết quả, thời gian làm việc. Nhóm Zalo theo chi nhánh cho người đã đạt.</p><div class="tg"><span class="pill p-b">ZBS Message Template</span><span class="pill p-b">GMF</span></div><a href="#" onclick="show('zns');return false">Xem mẫu tin →</a></div>
+</div>
+<div class="oldlane"><b>Song song: ứng viên cũ.</b> File Excel các mùa trước được clean data và phân nhóm, rồi gửi ZBS Message Template mời ứng tuyển. Ai quan tâm sẽ vào lại chặng 2. <a href="#" onclick="show('zns');return false">Xem cách làm →</a></div>
+
+<div class="sub" style="margin-top:26px">3 · Hiện trạng của Central Retail và giải pháp ZBS</div>
+<table class="ovt"><tr><th>Hiện trạng</th><th>Ứng dụng ZBS</th><th>Tab mô tả chi tiết</th></tr>
+<tr><td>Tìm đủ ứng viên mới đúng khu vực</td><td>Zalo Ads: quảng cáo theo khu vực, dẫn ứng viên về Zalo OA</td><td><a href="#" onclick="show('journey');return false">Hành trình & vận hành</a></td></tr>
+<tr><td>Ứng viên nhắn thẳng OA, thông tin thiếu và không đồng nhất</td><td>Zalo OA + Google Form: nhận diện từ khóa, đưa về luồng khu vực → vị trí → Google Form</td><td><a href="#" onclick="show('oa');return false">Zalo OA & GMF</a></td></tr>
+<tr><td>Phân luồng theo chi nhánh, dễ thất lạc lead</td><td>Google Sheet/Excel + nhãn trên OA: có cột HR phụ trách và trạng thái; HR Admin phân công</td><td><a href="#" onclick="show('journey');return false">Hành trình & vận hành</a></td></tr>
+<tr><td>Data ứng viên cũ chưa được khai thác</td><td>ZBS Message Template + Zalo Ads: clean data, phân nhóm, gửi tin mời ứng tuyển</td><td><a href="#" onclick="show('zns');return false">ZBS Message Template</a></td></tr>
+<tr><td>Liên hệ ứng viên thủ công</td><td>ZBS Message Template: tin tự động theo từng giai đoạn; GMF cho nhóm chi nhánh</td><td><a href="#" onclick="show('zns');return false">ZBS Message Template</a></td></tr></table>
+
+<div class="sub" style="margin-top:26px">4 · Cách tiếp cận</div>
+<div class="grid g2">
+<div class="card"><b>Làm nhanh bằng công cụ có sẵn</b><p style="color:var(--tx2);font-size:14px;margin-top:4px">Chủ yếu cấu hình Zalo Ads, OA, ZBS Message Template, GMF (đã có trong gói Toàn diện) và Google Form/Sheet. Không phát triển hệ thống mới. <a href="#" onclick="show('scope');return false">Xem Next Action →</a></p></div>
+<div class="card"><b>HR giữ cách làm quen thuộc</b><p style="color:var(--tx2);font-size:14px;margin-top:4px">HR tiếp tục làm việc trên Excel/Google Sheet. Ứng viên chỉ cần điền một biểu mẫu Google Form.</p></div>
+<div class="card"><b>Chạy thử trước, mở rộng sau</b><p style="color:var(--tx2);font-size:14px;margin-top:4px">Chạy thử 8–10 chi nhánh rồi mới mở dần lên ~80. <a href="#" onclick="show('plan');return false">Xem lộ trình →</a></p></div>
+<div class="card"><b>Ngân sách tính theo số lượng</b><p style="color:var(--tx2);font-size:14px;margin-top:4px">Ngân sách gồm hai phần: gói dịch vụ OA và tin ZBS Message Template. Nhập số lượng tin để ra tổng ngân sách. <a href="#" onclick="show('budget');return false">Xem Ngân sách →</a></p></div>
+</div>
+<div class="sub" style="margin-top:26px">5 · Giải thích nhanh các thuật ngữ</div>
+<div class="grid g3">
+<div class="card"><b>Zalo OA</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Tài khoản Zalo chính thức của Central Retail. Ứng viên nhắn tin vào đây để hỏi và đăng ký.</p></div>
+<div class="card"><b>Zalo Ads</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Quảng cáo hiển thị trên Zalo, chọn được khu vực người xem.</p></div>
+<div class="card"><b>ZBS Message Template</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Tin nhắn thông báo tự động gửi đến Zalo của ứng viên (xác nhận hồ sơ, lịch phỏng vấn, kết quả). Mẫu tin cần Zalo duyệt trước khi dùng.</p></div>
+<div class="card"><b>GMF</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Nhóm chat Zalo do OA quản lý, dùng để nhắn một lần cho cả nhóm ứng viên của một chi nhánh.</p></div>
+<div class="card"><b>Google Form và Google Sheet</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Form là biểu mẫu đăng ký ứng viên điền. Sheet là bảng tổng hợp tự cập nhật, HR mở được bằng Excel.</p></div>
+<div class="card"><b>Clean data</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Chuẩn hóa file ứng viên cũ: sửa định dạng số điện thoại, bỏ dòng trùng, bổ sung khu vực.</p></div>
+<div class="card"><b>Nhãn</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Ghi chú gắn vào từng ứng viên trên OA (khu vực, vị trí, “Cần HR”) để HR lọc nhanh.</p></div>
+<div class="card"><b>Chạy thử</b><p style="color:var(--tx2);font-size:13.5px;margin-top:4px">Triển khai ở 8–10 chi nhánh trước, đánh giá rồi mới mở rộng.</p></div>
+</div>
+</section>
+
+<section class="tab" id="t-journey">
+<h2>Hành trình ứng viên & quy trình vận hành</h2>
+<p class="lead">Một luồng 6 bước kèm màn hình minh họa. Chọn một vai trò để làm nổi bật các bước họ tham gia, hoặc bấm vào một bước để xem chi tiết. Google Sheet/Excel là nơi duy nhất ghi nhận trạng thái ứng viên.</p>
+<div class="chips" id="jroles"></div><div class="card" id="roleInfo" style="margin-bottom:18px;font-size:14px">Bấm một vai trò để làm nổi bật các bước họ tham gia.</div><div class="jflow" id="jflow"></div>
+<div class="card detail" id="stepDetail"></div>
+<p class="note">Ứng viên cũ trong Excel vào lại hành trình từ bước 1 qua ZBS Message Template.</p>
+</section>
+
+<section class="tab" id="t-oa">
+<h2>Zalo OA: Chatbot, từ khóa & form đăng ký</h2>
+<p class="lead">Chọn một kịch bản, rồi bấm theo hướng dẫn trên điện thoại (nút nhấp nháy là bước tiếp theo). Luồng gồm menu bấm chọn, chọn khu vực rồi chọn vị trí; ứng viên điền Google Form (chọn GO! hoặc Tops Market) và dữ liệu đổ về Excel. Tên chi nhánh chỉ để minh họa.</p><div class="chips" id="scChips"></div><div class="card" id="scGuide" style="margin-bottom:18px"></div>
+<div style="display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start">
+<div class="phone"><div class="ph-h"><div class="av">CR</div><div><b>Tuyển dụng Central Retail</b><small>● Đang hoạt động</small></div></div>
+<div class="chat" id="chat"></div><div class="qr" id="qr"></div>
+<form class="inp" id="inpf"><input id="inpt" placeholder="Nhắn tin tự do…" autocomplete="off"><button>Gửi</button></form></div>
+<div class="panel">
+<div class="card" style="margin-bottom:12px"><div class="sub">Từ khóa bắt được</div><div class="rulebox" id="rule">Gõ một tin nhắn để xem OA nhận diện từ khóa nào.</div>
+<div class="sub" style="margin-top:12px">Nhãn tự gắn cho ứng viên</div><div id="tags"><span style="color:var(--mut);font-size:13px">Chưa có</span></div>
+<div class="sub" style="margin-top:12px">Google Sheet / Excel trung tâm (Google Form tự đổ về)</div><div class="xl" style="max-height:210px;overflow:auto"><table id="xtbl"></table></div><p class="note" style="margin-top:6px">Mỗi lần ứng viên gửi Google Form, một dòng mới tự thêm vào Google Sheet; HR tải hoặc mở bằng Excel.</p>
+<button class="btn" style="margin-top:12px" id="reset">↺ Chơi lại</button></div>
+<div class="card"><h3>Bảng từ khóa (đề xuất)</h3>
+<table style="font-size:12.5px"><tr><th>Từ khóa</th><th>Hành động</th></tr>
+<tr><td>tuyển, ứng tuyển, việc làm, thời vụ</td><td>Vào luồng chọn khu vực</td></tr>
+<tr><td>tên thành phố (HCM, Hà Nội, Đà Nẵng…)</td><td>Bỏ qua bước khu vực, vào chọn vị trí</td></tr>
+<tr><td>Big C, GO!, Tops</td><td>Gắn nhãn thương hiệu, hỏi khu vực</td></tr>
+<tr><td>lương, thu nhập</td><td>Trả lời mẫu về thu nhập</td></tr>
+<tr><td>ca làm, giờ làm</td><td>Trả lời mẫu về thời gian làm việc</td></tr>
+<tr><td>phỏng vấn, hồ sơ, kết quả, liên hệ</td><td>Hỏi SĐT, báo HR tra cứu</td></tr>
+<tr><td>(không khớp)</td><td>Hiện menu, gắn nhãn “Cần HR”</td></tr></table></div>
+</div></div>
+
+<h3 style="margin-top:28px">Kịch bản tin nhắn mẫu (trả lời nhanh cho HR)</h3>
+<div class="scn" id="scn"></div>
+
+<h3 style="margin-top:28px">GMF: nhóm Zalo theo chi nhánh (đã có trong gói toàn diện)</h3>
+<div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+<div class="gm"><div class="gh"><b>Ứng viên GO! Miền Đông – Đợt 1</b><small>Nhóm do OA quản lý · 24 thành viên (minh họa)</small></div>
+<div class="gc"><div><div class="nm">Tuyển dụng Central Retail (OA)</div><div class="m bot">Chào cả nhóm! Buổi định hướng ngày 22/12, 8:00 tại quầy dịch vụ khách hàng. Mang theo CCCD bản gốc.</div></div>
+<div><div class="nm">Tuyển dụng Central Retail (OA)</div><div class="m bot">Đồng phục sẽ phát tại buổi định hướng. Hạn chót xác nhận tham dự: 20/12.</div></div></div></div>
+<div class="card" style="flex:1;min-width:280px"><h3>Dùng GMF vào việc gì</h3><ul>
+<li>Mỗi chi nhánh một nhóm cho ứng viên đã đạt: thông báo buổi định hướng, ca làm, đồng phục, hướng dẫn ký HĐLĐ.</li>
+<li>HR chi nhánh nhắn một lần cho cả nhóm thay vì từng người.</li>
+<li>Không phát sinh chi phí tính năng mới vì Central Retail đã mua gói.</li></ul>
+<p class="note">Số thành viên tối đa mỗi nhóm phụ thuộc gói OA đang dùng; ZBS sẽ xác nhận với gói cụ thể của Central Retail trước chạy thử.</p></div></div>
+</section>
+
+<section class="tab" id="t-zns">
+<h2>ZBS Message Template & ứng viên cũ</h2>
+<p class="lead">ZBS Message Template dùng cho hai việc: đánh thức ứng viên cũ từ file Excel và chăm sóc ứng viên suốt quá trình tuyển. Data cũ được clean data trước khi gửi.</p>
+<div class="card" style="margin-bottom:20px"><h3>Ứng viên cũ: từ file Excel đến ZBS Message Template</h3>
+<div class="os"><div><i>1</i>Clean data data</div><div><i>2</i>Phân nhóm A / B / C</div><div><i>3</i>Thử lô nhỏ (5–10% nhóm A)</div><div><i>4</i>Gửi ZBS Message Template “Mời ứng tuyển”</div><div><i>5</i>Vào luồng chung: Google Form → Sheet</div></div>
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px"><button class="btn" id="obtn">▶ Chạy clean data & phân nhóm</button><span style="font-size:13px;color:var(--tx2)">Bấm để xem file Excel trước và sau khi clean data (dữ liệu minh họa).</span></div>
+<div id="oclean"></div>
+<div class="grid g3" style="margin-top:12px"><div><span class="pill p-ok">Nhóm A</span> <span style="font-size:13px">Hoàn thành mùa trước, đánh giá tốt, gần đây</span></div><div><span class="pill p-warn">Nhóm B</span> <span style="font-size:13px">Làm gần đây hoặc đã phỏng vấn</span></div><div><span class="pill p-no">Nhóm C</span> <span style="font-size:13px">Hồ sơ còn lại, lâu năm hoặc khác khu vực</span></div></div>
+<p class="note">Điều kiện: Central Retail xác nhận cơ sở sử dụng dữ liệu cá nhân của ứng viên cũ. Ứng viên quan tâm điền Google Form và vào Excel trung tâm với nguồn “ứng viên cũ” để đo riêng.</p></div>
+<h3>Các mẫu tin ZBS Message Template trong toàn bộ quá trình tuyển</h3>
+<p class="lead" style="margin-bottom:12px">Chọn mẫu tin và sửa tham số để xem nội dung ứng viên nhận được. Mọi mẫu tin cần được Zalo duyệt trước khi chạy.</p>
+<div class="chips" id="zchips"></div>
+<div style="display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start">
+<div class="zns" id="zprev"></div>
+<div class="card" style="flex:1;min-width:300px"><h3 id="ztitle"></h3><p id="zwhen" style="color:var(--tx2);font-size:13px"></p>
+<div class="sub" style="margin-top:14px">Tham số (sửa để xem trước)</div><div class="pf" id="zparams"></div>
+<p class="note">Template mời ứng tuyển hàng loạt có thể bị giới hạn loại mẫu tin theo chính sách Zalo; ZBS sẽ rà soát và nộp duyệt sớm ở giai đoạn chuẩn bị.</p></div></div>
+</section>
+
+
+
+
+
+<section class="tab" id="t-scope">
+<h2>Next Action</h2>
+<p class="lead">Mỗi hạng mục có mức độ (có sẵn, cần tích hợp, cần phát triển), việc cần làm tiếp, bên thực hiện và hạn đề xuất trong giai đoạn chuẩn bị (16/11 – 27/11). Hầu hết dùng tính năng có sẵn, không bắt buộc phát triển hệ thống mới để chạy chạy thử.</p>
+<div class="chips" id="chips"></div>
+<table id="scopeTbl"><thead><tr><th>Hạng mục</th><th>Mức độ</th><th>Next action</th><th>Bên thực hiện</th><th>Hạn (đề xuất)</th></tr></thead><tbody></tbody></table>
+<p class="note">Cần ZBS xác nhận kỹ thuật với gói OA hiện dùng của Central Retail trước khi cam kết chính thức.</p>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>Central Retail cần quyết định</h3><ul><li>Danh sách 8–10 chi nhánh chạy thử và HR phụ trách từng chi nhánh; 1 HR Admin đầu mối.</li><li>Danh sách khu vực và chi nhánh theo từng thương hiệu (GO!, Tops Market).</li><li>Ngân sách theo tab Ngân sách.</li><li>Cơ sở sử dụng dữ liệu ứng viên cũ và file Excel mẫu.</li></ul></div>
+<div class="card"><h3>Bước tiếp theo</h3><ol style="padding-left:20px"><li>Workshop 60–90 phút với HR Manager, Recruitment Manager, HR Admin.</li><li>Gửi mẫu Excel ứng viên cũ (ẩn thông tin nhạy cảm).</li><li>Thống nhất số lượng và ngân sách.</li><li>Xác nhận phạm vi, bắt đầu chuẩn bị ngày 16/11/2026.</li></ol></div></div>
+</section>
+
+<section class="tab" id="t-budget">
+<h2>Ngân sách theo loại tin nhắn và số lượng</h2>
+<p class="lead">Mỗi dòng là một mẫu ZBS Message Template. Chọn loại mẫu tin, nút bấm thêm, hình ảnh và số lượng cả chiến dịch; khung bên phải hiển thị tin khách nhận được và đơn giá. Ngân sách gồm hai phần: gói dịch vụ OA (đã có GMF) và tin ZBS Message Template. Số lượng mặc định chỉ để minh họa.</p>
+<div class="card" style="margin-bottom:18px">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px"><h3 style="margin:0">ZBS Message Template theo từng mẫu tin</h3><button class="btn" onclick="addRow()">Thêm mẫu tin</button></div>
+<div class="zwrap"><div id="zRows"></div><div class="zprev"><h3>Xem trước tin nhắn</h3><div id="zPrev"></div></div></div>
+<div class="kp"><div class="card"><span>Tổng số tin cả chiến dịch</span><b id="kQty">0</b></div><div class="card"><span>Đơn giá trung bình mỗi tin</span><b id="kAvg">0đ</b></div><div class="card"><span>Chi phí ZBS Message Template (chưa VAT)</span><b id="kZbs">0đ</b></div></div>
+<p class="note">Đơn giá một tin = giá theo loại mẫu tin + hình ảnh + nút phản hồi + các nút bấm thêm. Nút bấm bắt buộc đi kèm loại mẫu tin không tính phí. “Nút bấm thêm” là nút nằm dưới tin nhắn, ví dụ “Mở Google Form”. Với Trang OA và bài viết OA, nút đầu tiên miễn phí và từ nút thứ hai tính 100đ; các đích khác tính theo bảng giá riêng.</p>
+</div>
+<div class="grid2">
+<div class="card"><h3>Gói dịch vụ OA</h3>
+<div class="fld"><div>Số tháng chiến dịch<small>Dùng để tính hạn mức gói, nhóm GMF và gói OA theo tháng</small></div><input type="number" id="bMonths" value="3" min="1"></div>
+
+
+
+
+
+<div class="fld"><div>Gói dịch vụ OA</div><select id="bPkg"><option value="0">Cơ bản</option><option value="1">Tiêu chuẩn</option><option value="2">Tăng trưởng</option><option value="3" selected>Toàn diện</option></select></div>
+<div class="fld"><div>Central Retail đã mua gói này<small>Bật nếu muốn loại phí gói đã mua ra khỏi ngân sách mới</small></div><input type="checkbox" id="bOwned" style="justify-self:end;width:18px;height:18px"></div>
+<div class="fld"><div>Cộng VAT 10% cho ZBS Message Template<small>Đơn giá chưa gồm VAT</small></div><input type="checkbox" id="bVat" checked style="justify-self:end;width:18px;height:18px"></div>
+
+
+
+</div>
+<div><div class="card" style="margin-bottom:16px"><h3>Ngân sách ước tính</h3><table id="bTable"></table><div class="bar" id="bBar"></div><div class="legend" id="bLegend"></div></div>
+<div class="card" style="margin-bottom:16px"><h3>Phân bổ theo đợt</h3><div id="phs"></div></div>
+<div class="card"><h3>Cơ sở tính</h3>
+<p class="note" style="margin-top:0">ZBS Message Template tính theo tin gửi thành công; đơn giá chưa gồm VAT: xác thực và voucher 400đ, các loại còn lại 300đ; hình ảnh +300đ, nút phản hồi +100đ (theo thông báo cập nhật đơn giá ZBS Message Template của Zalo ngày 27/02/2026). Gói dịch vụ OA tính theo năm.</p>
+<p class="note">Số lượng mặc định là giá trị minh họa. Cần đối chiếu bảng giá hiện hành (zalo.solutions/oa/pricing) và xác nhận gói Toàn diện của Central Retail trước khi báo khách.</p></div></div>
+</div>
+</section>
+
+<section class="tab" id="t-plan">
+<h2>Chạy thử và kế hoạch triển khai</h2>
+<p class="lead">Mốc cuối là 28 Tết (04/02/2027). Lịch là đề xuất, sẽ chốt cùng Central Retail.</p>
+<div class="tl">
+<div class="ph"><h4>Chuẩn bị</h4><div class="d">16/11 – 27/11</div><ul><li>Google Form, Google Sheet</li><li>OA: chatbot, từ khóa</li><li>Nộp Zalo duyệt các mẫu tin</li><li>Clean data data cũ</li><li>Kiểm tra GMF theo gói</li></ul></div>
+<div class="ph main"><h4>Chạy thử</h4><div class="d">30/11 – 18/12</div><ul><li>8–10 chi nhánh</li><li>Ads quy mô nhỏ</li><li>Lô thử data cũ nhóm A</li></ul><div class="gate">Cổng 1: HR Central Retail rà soát kết quả chạy thử rồi quyết định mở rộng</div></div>
+<div class="ph"><h4>Mở rộng đợt 1</h4><div class="d">21/12 – 15/01</div><ul><li>Mở dần lên ~80 chi nhánh</li><li>Ads theo từng cụm</li><li>Data cũ nhóm B, C</li></ul><div class="gate">Cổng 2: rà soát đợt 1, chỉnh ngân sách đợt 2</div></div>
+<div class="ph"><h4>Đợt 2</h4><div class="d">18/01 – 04/02</div><ul><li>Bổ sung chi nhánh còn thiếu</li><li>Nhắc lại ứng viên chưa phản hồi</li><li>Chốt nhận việc</li></ul></div></div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>Phạm vi chạy thử (đề xuất)</h3><ul><li>8–10 chi nhánh, đủ GO! và Tops Market và 2–3 khu vực, ưu tiên nhu cầu tuyển cao.</li><li>Mỗi chi nhánh một HR phụ trách; 1 HR Admin giữ bảng phân công.</li><li>Chạy đủ chuỗi Ads → OA → Google Form → Excel → phân công → ZBS Message Template, cộng lô thử data cũ.</li><li>Tiêu chí qua Cổng 1 do Central Retail đề xuất.</li></ul></div>
+</div>
+</section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tabs=[['overview','Tổng quan'],['journey','Hành trình & vận hành'],['oa','Zalo OA & GMF'],['zns','ZBS Message Template'],['scope','Next Action'],['budget','Ngân sách'],['plan','Chạy thử & lộ trình']];
+const nav=$('#nav');
+tabs.forEach(([id,n])=>{const b=document.createElement('button');b.textContent=n;b.onclick=()=>show(id);b.dataset.id=id;nav.appendChild(b)});
+function show(id){if(!$('#t-'+id))id='overview';$$('.tab').forEach(t=>t.classList.toggle('on',t.id==='t-'+id));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.id===id));history.replaceState(null,'','#'+id);window.scrollTo(0,0)}
+show((location.hash||'#overview').slice(1));
+
+/* journey */
+const JM=[
+`<div class="mb ads"><b>TÌM VIỆC KHÔNG KHÓ</b><span>Tuyển dụng thời vụ Tết 2027</span><div class="cta">Nhắn tin</div></div><div class="sp">Zalo Ads hiển thị theo khu vực; ứng viên cũ nhận ZBS Message Template mời ứng tuyển</div>`,
+`<div class="mb ads sm"><b>TÌM VIỆC KHÔNG KHÓ</b></div><div class="bub">Chào mừng bạn đến với trang tuyển dụng Central Retail. Bạn cần hỗ trợ gì?</div><div class="li"><div>Thông tin tuyển dụng <i>›</i></div><div>Thông tin khác <i>›</i></div></div>`,
+`<div class="bub">Vui lòng chọn khu vực bạn muốn ứng tuyển:</div><div class="li"><div>📍 TP. Hồ Chí Minh <i>›</i></div><div>📍 Hà Nội <i>›</i></div><div>📍 Đà Nẵng - Miền Trung <i>›</i></div></div><div class="sp">Sau đó chọn vị trí ứng tuyển</div>`,
+`<div class="gfm"><div class="gt">Đơn đăng ký ứng tuyển Tết 2027</div><div class="gq">Thương hiệu *<br>◉ GO! &nbsp; ○ Tops Market</div><div class="gq">Chi nhánh *<br><u>Chọn chi nhánh ▾</u></div><div class="gb">Gửi</div></div>`,
+`<table class="mt"><tr><th>Họ tên</th><th>KV</th><th>Thương hiệu</th><th>HR</th></tr><tr><td>Lan</td><td>HCM</td><td>GO!</td><td>HR-HCM</td></tr><tr><td>Minh</td><td>HN</td><td>Tops</td><td>HR-HN</td></tr><tr class="new"><td>Hoa</td><td>HCM</td><td>Tops</td><td>chưa phân công</td></tr></table><div class="sp">Google Sheet/Excel trung tâm; HR Admin phân công HR chi nhánh</div>`,
+`<div class="zmini"><b>Lịch phỏng vấn</b><br>09:00, 18/12 · GO! Miền Đông</div><div class="zmini ok"><b>Kết quả: Đạt</b><br>Ngày nhận việc 22/12</div><div class="sp">+ Nhóm Zalo chi nhánh (GMF) để nhận hướng dẫn</div>`];
+const J=[
+['Tiếp cận','Thấy quảng cáo theo khu vực; hoặc nhận ZBS Message Template mời ứng tuyển nếu là ứng viên cũ','Zalo Ads · ZBS Message Template','Cấu hình chiến dịch theo cụm chi nhánh; gửi ZBS Message Template cho nhóm ứng viên cũ','ok','Có sẵn'],
+['Chào & menu OA','Nhắn OA, nhận tin chào kèm menu bấm chọn (Thông tin tuyển dụng → Đăng ký ứng tuyển)','Zalo OA (tin chào, menu, từ khóa)','Không cần ép dùng chatbot; tin nhắn tự do vẫn được nhận diện từ khóa','ok','Có sẵn'],
+['Chọn khu vực, vị trí','Chọn khu vực (danh sách bấm chọn), sau đó chọn vị trí ứng tuyển; có hotline nếu gọi trong giờ hành chính','Zalo OA (kịch bản chatbot)','Nhãn khu vực và vị trí gắn tự động cho ứng viên','ok','Có sẵn'],
+['Điền Google Form','Bấm “Điền đơn đăng ký”, chọn thương hiệu GO! hoặc Tops Market, chọn chi nhánh, điền họ tên, SĐT, lịch rảnh','Google Form → Google Sheet/Excel','Không phải nhập tay; dữ liệu tự đổ về file trung tâm','ok','Có sẵn'],
+['Phân luồng','Chờ được liên hệ','Google Sheet/Excel + nhãn OA','HR Admin lọc theo khu vực, thương hiệu, chi nhánh và phân công HR phụ trách','ok','Có sẵn'],
+['Thông báo & nhận việc','Nhận ZBS Message Template lịch phỏng vấn, kết quả, thời gian làm việc; vào nhóm Zalo chi nhánh để nhận hướng dẫn','ZBS Message Template · GMF','HR chi nhánh liên hệ, cập nhật trạng thái, nhắn nhóm qua GMF','ok','Có sẵn']];
+const JR=[['Ứng viên'],['Ứng viên','Zalo OA'],['Ứng viên','Zalo OA'],['Ứng viên','Form + Sheet'],['Form + Sheet','HR Admin'],['Zalo OA','HR chi nhánh','Ứng viên']];
+const RD={'Ứng viên':'Nhắn OA hoặc bấm quảng cáo, chọn khu vực và vị trí, điền Google Form, nhận thông báo và đi phỏng vấn.','Zalo OA':'Nhận diện từ khóa, dẫn luồng khu vực → vị trí, gắn nhãn; gửi ZBS Message Template; HR trao đổi 2 chiều; GMF cho nhóm chi nhánh.','Form + Sheet':'Google Form thu thập chuẩn; Google Sheet/Excel mỗi dòng một ứng viên với nguồn, khu vực, thương hiệu, chi nhánh, vị trí, HR phụ trách, trạng thái, lịch PV.','HR Admin':'Giữ bảng chi nhánh – HR phụ trách; lọc dòng mới và phân công (đề xuất trong ngày); theo dõi lead chưa phân công hoặc quá hạn.','HR chi nhánh':'Xử lý lead được phân công, liên hệ trong thời gian cam kết (đề xuất 4 giờ làm việc), mời PV, cập nhật trạng thái vào Sheet, nhắn nhóm GMF.'};
+const jf=$('#jflow');
+J.forEach((s,i)=>{const c=document.createElement('button');c.className='jc'+(i===3?' key':'');c.innerHTML=`<div class="jm">${JM[i]}</div><div class="jt"><b>${i+1}</b><span>${s[0]}</span></div><div class="js">${s[2]}</div><div class="rl">${JR[i].map(r=>'<span class="pill p-no">'+r+'</span>').join('')}</div>`;c.onclick=()=>pick(i);jf.appendChild(c)});
+function pick(i){$$('.jc').forEach((e,k)=>e.classList.toggle('on',k===i));const s=J[i];$('#stepDetail').innerHTML=`<div><h4>Ứng viên làm gì</h4><p>${s[1]}</p></div><div><h4>Sản phẩm ZBS</h4><p>${s[2]}</p></div><div><h4>HR / vận hành</h4><p>${s[3]}</p></div><div><h4>Mức độ</h4><span class="pill p-${s[4]}">${s[5]}</span></div>`}
+['Tất cả','Ứng viên','Zalo OA','Form + Sheet','HR Admin','HR chi nhánh'].forEach((r,k)=>{const b=document.createElement('button');b.className='chip'+(k===0?' on':'');b.textContent=r;b.onclick=()=>{$$('#jroles .chip').forEach(c=>c.classList.toggle('on',c===b));$$('.jc').forEach((e,i)=>e.classList.toggle('dim',k>0&&!JR[i].includes(r)));$('#roleInfo').innerHTML=k?'<b>'+r+':</b> '+RD[r]:'Bấm một vai trò để làm nổi bật các bước họ tham gia.'};$('#jroles').appendChild(b)});
+pick(0);
+
+/* chatbot */
+const REG=[['hcm','TP. Hồ Chí Minh'],['hn','Hà Nội'],['dn','Đà Nẵng - Miền Trung'],['kh','Khu vực khác']];
+const BRB={hcm:{go:['GO! Miền Đông','GO! Gò Vấp'],tops:['Tops Market Thảo Điền','Tops Market Quận 7']},hn:{go:['GO! Thăng Long','GO! Long Biên'],tops:['Tops Market Royal City','Tops Market Cầu Giấy']},dn:{go:['GO! Đà Nẵng','GO! Huế'],tops:['Tops Market Sơn Trà','Tops Market Hải Châu']},kh:{go:['GO! Cần Thơ','GO! Đồng Nai'],tops:['Tops Market Nha Trang','Tops Market Bình Dương']}};
+const BN={go:'GO!',tops:'Tops Market'};
+const POS=['Nhân viên bán hàng','Thu ngân','Nhân viên kho / soạn hàng','Quầy tươi sống'];
+const HRN={hcm:'HR-HCM',hn:'HR-HN',dn:'HR-MT',kh:'HR-Khác'};
+const SCN=[
+{k:'Bấm theo menu',d:'Ứng viên bấm lần lượt các nút menu, chọn khu vực và vị trí, rồi điền Google Form.',steps:[
+ {t:'Bấm “Thông tin tuyển dụng”',e:'menu1',btn:['Thông tin tuyển dụng']},
+ {t:'Bấm “Đăng ký ứng tuyển”',e:'apply',btn:['Đăng ký ứng tuyển']},
+ {t:'Chọn khu vực (danh sách bấm chọn)',e:'region',all:1},
+ {t:'Chọn vị trí ứng tuyển',e:'pos',all:1},
+ {t:'Bấm “Điền đơn đăng ký” (hoặc Hotline)',e:'form',btn:['Điền đơn đăng ký']},
+ {t:'Chọn thương hiệu GO! / Tops, điền và gửi Google Form',e:'sent'}]},
+{k:'Nhắn tin tự do, OA nhận diện từ khóa',d:'Ứng viên không đi theo menu mà nhắn thẳng. OA nhận diện từ khóa và đưa vào đúng luồng.',sug:['tuyển dụng ở hà nội','tìm việc làm thời vụ','big c còn tuyển không'],steps:[
+ {t:'Gửi một tin nhắn (bấm gợi ý bên dưới)',e:'kw'},
+ {t:'Chọn vị trí hoặc khu vực theo gợi ý của OA',e:'pos',all:1},
+ {t:'Bấm “Điền đơn đăng ký”',e:'form',btn:['Điền đơn đăng ký']},
+ {t:'Điền và gửi Google Form',e:'sent'}]},
+{k:'Hỏi lương, ca làm',d:'Ứng viên hỏi thông tin trước khi đăng ký. OA trả lời mẫu rồi kéo về luồng ứng tuyển.',sug:['lương bao nhiêu','ca làm thế nào'],steps:[
+ {t:'Hỏi về lương (bấm gợi ý)',e:'salary'},
+ {t:'Hỏi về ca làm (bấm gợi ý)',e:'shift'},
+ {t:'Bấm nút trong câu trả lời để vào luồng đăng ký',e:'apply',btn:['Đăng ký ứng tuyển','Chọn khu vực']}]},
+{k:'Chưa được liên hệ / kết quả',d:'Ứng viên đã nộp hồ sơ nhưng chưa nhận phản hồi. OA gắn nhãn để HR xử lý.',sug:['0901234567'],steps:[
+ {t:'Bấm “Thông tin tuyển dụng”',e:'menu1',btn:['Thông tin tuyển dụng']},
+ {t:'Bấm “Chưa được liên hệ”',e:'status',btn:['Chưa được liên hệ','Kết quả phỏng vấn']},
+ {t:'Nhắn số điện thoại (bấm gợi ý): OA gắn nhãn “Cần HR”',e:'tag'}]}];
+let S,SCI=0;const SEEN=new Set(),XR=[];
+function norm(t){return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d')}
+function scr(){$('#chat').scrollTop=1e5}
+function say(w,h){const d=document.createElement('div');d.className='m '+w;d.innerHTML=h;$('#chat').appendChild(d);scr()}
+function nextStep(){return SCN[SCI].steps.find(s=>!SEEN.has(s.e))}
+function hint(d){const n=nextStep();if(!n)return;[...d.querySelectorAll('button')].forEach(b=>{const t=b.textContent;if(n.all||(n.btn&&n.btn.some(x=>t.includes(x))))b.classList.add('hint')})}
+function menu(items,pin){const d=document.createElement('div');d.className='lm';items.forEach(([l,f])=>{const b=document.createElement('button');b.innerHTML=(pin?'<span>📍</span>':'')+'<span>'+esc(l)+'</span><i>›</i>';b.onclick=()=>{if(d.classList.contains('used'))return;d.classList.add('used');b.classList.add('sel');say('me',esc(l));f()};d.appendChild(b)});$('#chat').appendChild(d);hint(d);scr()}
+function ev(n){SEEN.add(n);renderGuide();$$('.lm:not(.used)').forEach(hintRefresh)}
+function hintRefresh(d){d.querySelectorAll('button').forEach(b=>b.classList.remove('hint'));hint(d)}
+function addTag(t){if(!S.tags.includes(t))S.tags.push(t);renderTags()}
+function renderTags(){$('#tags').innerHTML=S.tags.length?S.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join(''):'<span style="color:var(--mut);font-size:13px">Chưa có</span>'}
+function renderX(){$('#xtbl').innerHTML='<tr><th>Giờ</th><th>Họ tên</th><th>SĐT</th><th>Khu vực</th><th>Vị trí</th><th>Thương hiệu</th><th>Chi nhánh</th><th>Nguồn</th><th>HR</th><th>TT</th></tr>'+(XR.length?XR.map(r=>'<tr>'+r.map(c=>'<td>'+esc(c)+'</td>').join('')+'</tr>').join(''):'<tr><td colspan="10" style="color:var(--mut)">Chưa có đăng ký. Hoàn thành Google Form trên điện thoại để thấy dòng mới.</td></tr>')}
+function renderGuide(){const sc=SCN[SCI],n=nextStep();
+$$('#scChips .chip').forEach((c,i)=>c.classList.toggle('on',i===SCI));
+let h=`<div style="font-weight:700;margin-bottom:2px">${esc(sc.k)}</div><div style="color:var(--tx2);font-size:13px;margin-bottom:10px">${esc(sc.d)}</div><div class="sg">`;
+sc.steps.forEach((s,i)=>{const dn=SEEN.has(s.e),cur=n===s;h+=`<div class="${dn?'dn':cur?'cur':''}"><i>${dn?'✓':i+1}</i><span>${esc(s.t)}</span></div>`});
+h+='</div>';
+if(sc.sug&&n)h+='<div class="sub" style="margin-top:10px">Bấm để gửi tin nhắn thử</div><div class="chips" style="margin:4px 0 0">'+sc.sug.map((x,i)=>`<button class="chip sg-s" data-i="${i}">${esc(x)}</button>`).join('')+'</div>';
+h+=n?'':'<div style="margin-top:10px;color:#047857;font-weight:600">✓ Hoàn thành kịch bản. Xem Google Sheet và nhãn bên phải, hoặc chọn kịch bản khác.</div>';
+$('#scGuide').innerHTML=h;
+$$('.sg-s').forEach(b=>b.onclick=()=>{$('#inpt').value=sc.sug[+b.dataset.i];$('#inpf').dispatchEvent(new Event('submit',{cancelable:true}))})}
+function resetChat(){S={region:null,pos:null,tags:[],src:'OA'};SEEN.clear();$('#chat').innerHTML='';$('#rule').textContent='Gõ hoặc bấm gợi ý để xem OA nhận diện từ khóa nào.';renderTags();renderX();renderGuide();welcome()}
+function welcome(){const b=document.createElement('div');b.className='banner';b.innerHTML='<b>TÌM VIỆC KHÔNG KHÓ</b><span>Tuyển dụng thời vụ Tết 2027</span><em>Central Retail · GO! · Tops Market</em>';$('#chat').appendChild(b);
+say('bot','Chào mừng bạn đến với trang tuyển dụng của Central Retail. Bạn cần hỗ trợ gì?');menu([['Thông tin tuyển dụng',m2],['Thông tin khác',other]])}
+function m2(){ev('menu1');say('bot','Bạn cần hỗ trợ thông tin gì?');menu([['Đăng ký ứng tuyển',askRegion],['Chưa được liên hệ',askStatus],['Kết quả phỏng vấn',askStatus],['Khác',other]])}
+function askRegion(){ev('apply');say('bot','Vui lòng chọn khu vực bạn muốn ứng tuyển:');menu(REG.map(([k,n])=>[n,()=>setRegion(k)]),true)}
+function setRegion(k){S.region=k;addTag('KV: '+REG.find(r=>r[0]===k)[1]);ev('region');askPos()}
+function askPos(){say('bot','Vui lòng chọn vị trí bạn muốn đăng ký ứng tuyển');menu(POS.map(p=>[p,()=>setPos(p)]))}
+function setPos(p){S.pos=p;addTag('VT: '+p);ev('pos');say('bot','Vui lòng đăng ký theo 2 cách sau:\n(Lưu ý: bạn vui lòng gọi hotline trong khoảng thời gian 08h00 - 19h00. Nếu ứng tuyển sau thời gian này, bạn vui lòng điền đơn đăng ký)');menu([['Hotline',hotline],['Điền đơn đăng ký',openForm]])}
+function hotline(){say('bot','Hotline tuyển dụng: [số hotline HR, cung cấp sau]. Hoạt động 08h00 - 19h00.')}
+function openForm(){ev('form');const rn=REG.find(r=>r[0]===S.region)[1];say('bot','Bạn bấm vào đơn đăng ký bên dưới nhé. Khu vực và vị trí đã được điền sẵn.');
+const f=document.createElement('form');f.className='gf';
+f.innerHTML='<div class="gf-top">🔒 docs.google.com/forms/…</div><div class="gf-h"><b>Đơn đăng ký ứng tuyển thời vụ Tết 2027</b><small style="color:var(--tx2)">Central Retail</small><div class="pre">Khu vực: '+esc(rn)+' · Vị trí: '+esc(S.pos)+' (điền sẵn từ OA)</div></div>'
++'<div class="gf-q"><label class="t">Họ và tên <sup>*</sup></label><input type="text" name="n" placeholder="Câu trả lời của bạn"></div>'
++'<div class="gf-q"><label class="t">Số điện thoại <sup>*</sup></label><input type="text" name="s" placeholder="Câu trả lời của bạn"></div>'
++'<div class="gf-q"><label class="t">Thương hiệu <sup>*</sup></label><div class="rd"><input type="radio" name="b" value="go" id="rb1"><label for="rb1">GO!</label></div><div class="rd"><input type="radio" name="b" value="tops" id="rb2"><label for="rb2">Tops Market</label></div></div>'
++'<div class="gf-q"><label class="t">Chi nhánh <sup>*</sup></label><select name="c"><option value="">Chọn thương hiệu trước</option></select></div>'
++'<div class="gf-q"><label class="t">Năm sinh</label><input type="text" name="y" placeholder="Câu trả lời của bạn"></div>'
++'<div class="gf-q"><label class="t">Lịch rảnh</label><select name="l"><option>Cả tuần</option><option>Cuối tuần</option><option>Ca sáng</option><option>Ca chiều/tối</option></select></div>'
++'<div class="err"></div><button>Gửi</button>';
+f.querySelectorAll('[name=b]').forEach(r=>r.onchange=()=>{f.c.innerHTML='<option value="">Chọn chi nhánh</option>'+BRB[S.region][r.value].map(b=>'<option>'+esc(b)+'</option>').join('')});
+f.onsubmit=e=>{e.preventDefault();const d=new FormData(f);const er=f.querySelector('.err');
+if(!String(d.get('n')).trim()||!String(d.get('s')).trim()){er.textContent='Vui lòng nhập họ tên và số điện thoại';return}
+if(!d.get('b')||!d.get('c')){er.textContent='Vui lòng chọn thương hiệu và chi nhánh';return}
+f.querySelectorAll('input,select,button').forEach(x=>x.disabled=true);done(d)};
+$('#chat').appendChild(f);$('#chat').scrollTop=$('#chat').scrollHeight-60}
+function done(d){const rn=REG.find(r=>r[0]===S.region)[1],br=BN[d.get('b')];S.branch=d.get('c');addTag('TH: '+br);addTag('CN: '+S.branch);addTag('Đã nộp form');
+say('bot','Cảm ơn bạn! Central Retail đã nhận đơn đăng ký. HR phụ trách '+esc(S.branch)+' sẽ liên hệ bạn trong vòng 4 giờ làm việc (đề xuất). Bạn sẽ nhận thông báo xác nhận qua Zalo.');
+XR.unshift([new Date().toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit'}),String(d.get('n')).trim(),String(d.get('s')).trim(),rn,S.pos,br,S.branch,S.src,HRN[S.region],'Mới']);renderX();ev('sent')}
+function askStatus(){ev('status');say('bot','Bạn vui lòng nhắn số điện thoại đã đăng ký, HR sẽ kiểm tra và phản hồi sớm.')}
+function other(){say('bot','Bạn vui lòng nhắn nội dung cần hỗ trợ, HR sẽ phản hồi trong giờ làm việc.');addTag('Cần HR')}
+function faqSalary(){ev('salary');say('bot','Thu nhập thời vụ phụ thuộc vị trí và chi nhánh. HR sẽ cung cấp thông tin cụ thể khi liên hệ. Bạn muốn đăng ký ứng tuyển luôn không?');menu([['Đăng ký ứng tuyển',askRegion]])}
+function faqShift(){ev('shift');say('bot','Thời gian làm việc thời vụ được sắp xếp theo ca và nhu cầu từng chi nhánh. Bạn chọn khu vực để HR gửi lịch phù hợp nhé.');menu([['Chọn khu vực',askRegion]])}
+const RULES=[
+{n:'Tên thành phố',kw:['ho chi minh','hcm','sai gon','ha noi','da nang','hue'],act:(m)=>{S.region=/ha noi/.test(m)?'hn':/da nang|hue/.test(m)?'dn':'hcm';addTag('KV: '+REG.find(r=>r[0]===S.region)[1]);ev('region');askPos()},d:'Bỏ qua bước khu vực → chọn vị trí'},
+{n:'Thương hiệu',kw:['big c','bigc','go!','tops'],act:(m)=>{addTag('TH: '+(/tops/.test(m)?'Tops Market':'GO!'));askRegion()},d:'Gắn nhãn thương hiệu → hỏi khu vực'},
+{n:'Ứng tuyển',kw:['tuyen','ung tuyen','viec lam','thoi vu','xin viec'],act:askRegion,d:'Vào luồng chọn khu vực'},
+{n:'Thu nhập',kw:['luong','thu nhap','tien cong'],act:faqSalary,d:'Trả lời mẫu về thu nhập'},
+{n:'Thời gian làm việc',kw:['ca lam','gio lam','lich lam','thoi gian lam'],act:faqShift,d:'Trả lời mẫu về thời gian làm việc'},
+{n:'Hồ sơ / phỏng vấn',kw:['phong van','ho so','ket qua','lich pv','lien he'],act:askStatus,d:'Hỏi SĐT, báo HR'}];
+$('#inpf').onsubmit=e=>{e.preventDefault();const t=$('#inpt').value.trim();if(!t)return;$('#inpt').value='';say('me',esc(t));const m=norm(t);
+if(/\d{9,}/.test(m.replace(/[\s.]/g,''))){$('#rule').innerHTML='Nhận diện <b>số điện thoại</b> → gắn nhãn <b>“Cần HR”</b>, HR kiểm tra hồ sơ và liên hệ lại.';addTag('Cần HR');say('bot','Cảm ơn bạn! HR sẽ kiểm tra hồ sơ và liên hệ lại trong giờ làm việc.');ev('tag');return}
+for(const r of RULES){const k=r.kw.find(w=>m.includes(w));if(k){$('#rule').innerHTML=`Từ khóa <b>“${esc(k)}”</b> → nhóm <b>${r.n}</b><br><span style="color:var(--tx2)">${r.d}</span>`;ev('kw');r.act(m);return}}
+$('#rule').innerHTML='Không khớp từ khóa nào → hiện menu và gắn nhãn <b>“Cần HR”</b> để HR xem lại.';addTag('Cần HR');say('bot','Mình chưa hiểu rõ ý bạn, bạn chọn một mục bên dưới giúp mình nhé.');menu([['Thông tin tuyển dụng',m2],['Thông tin khác',other]])};
+$('#reset').onclick=resetChat;
+SCN.forEach((s,i)=>{const b=document.createElement('button');b.className='chip';b.textContent='Kịch bản '+(i+1)+': '+s.k;b.onclick=()=>{SCI=i;resetChat()};$('#scChips').appendChild(b)});
+resetChat();
+const SC=[
+['Tin chào lần đầu (tự động)','Xin chào! Cảm ơn bạn đã quan tâm tuyển dụng thời vụ Tết 2027 của Central Retail. Bạn chọn khu vực và chi nhánh gần nhất để mình hỗ trợ nhé.'],
+['Gửi link form','Bạn vui lòng điền form tại đây để HR chi nhánh liên hệ nhanh hơn: [link form]. Form chỉ mất khoảng 2 phút.'],
+['Nhắc ứng viên chưa điền form','Mình thấy bạn chưa hoàn tất form ứng tuyển. Bạn điền giúp mình tại [link form] để HR không bỏ lỡ hồ sơ của bạn nhé.'],
+['Ngoài giờ làm việc','Hiện đã ngoài giờ làm việc. HR sẽ phản hồi bạn vào đầu giờ làm việc tiếp theo. Bạn có thể điền form để mình ghi nhận trước.'],
+['Xác nhận đã nhận hồ sơ','Central Retail đã nhận hồ sơ của bạn. HR chi nhánh sẽ liên hệ trong thời gian sớm nhất.'],
+['Hẹn phỏng vấn (từ HR)','Chào [Tên], mời bạn phỏng vấn lúc [giờ] ngày [ngày] tại [chi nhánh]. Bạn xác nhận giúp mình nhé.']];
+$('#scn').innerHTML=SC.map(s=>`<div class="card"><b>${s[0]}</b><p>${esc(s[1])}</p></div>`).join('');
+
+/* zns */
+const Z=[
+{k:'Mời ứng tuyển (nhân viên cũ)',t:'Mời ứng tuyển thời vụ Tết 2027',w:'Gửi cho ứng viên cũ đã clean data, nhóm A trước. Kèm nút đăng ký mở form rút gọn.',
+ p:[['Tên ứng viên','Lan'],['Thương hiệu','Big C'],['Khu vực','TP.HCM'],['Hạn đăng ký','15/12/2026']],
+ b:p=>`Chào ${p[0]}, Central Retail (${p[1]}) đang tuyển nhân viên thời vụ Tết 2027 tại ${p[2]}.\nBạn từng đồng hành cùng chúng tôi, mời bạn đăng ký lại trước ${p[3]}.`,btn:'Đăng ký ngay'},
+{k:'Xác nhận hồ sơ',t:'Đã nhận hồ sơ ứng tuyển',w:'Gửi ngay sau khi ứng viên nộp form.',
+ p:[['Tên ứng viên','Lan'],['Chi nhánh','Big C Miền Đông'],['Vị trí','Thu ngân']],
+ b:p=>`Chào ${p[0]}, Central Retail đã nhận hồ sơ ứng tuyển vị trí ${p[2]} tại ${p[1]}.\nHR sẽ liên hệ bạn trong thời gian sớm nhất.`,btn:'Xem thông tin'},
+{k:'Lịch phỏng vấn & nhắc lịch',t:'Lịch phỏng vấn',w:'Gửi khi HR chốt lịch; gửi lại nhắc lịch trước 1 ngày.',
+ p:[['Tên ứng viên','Lan'],['Thời gian','09:00, 18/12/2026'],['Địa điểm','Big C Miền Đông, quầy dịch vụ KH'],['Người liên hệ','Chị Hoa - 090xxxxxxx']],
+ b:p=>`Chào ${p[0]}, mời bạn tham gia phỏng vấn:\n• Thời gian: ${p[1]}\n• Địa điểm: ${p[2]}\n• Liên hệ: ${p[3]}\nVui lòng mang theo CCCD.`,btn:'Xác nhận tham dự'},
+{k:'Kết quả phỏng vấn',t:'Kết quả phỏng vấn',w:'Gửi sau khi HR cập nhật kết quả. Chọn kết quả để xem hai phiên bản nội dung.',res:true,
+ p:[['Tên ứng viên','Lan'],['Vị trí','Thu ngân'],['Chi nhánh','Big C Miền Đông'],['Ngày nhận việc','22/12/2026']],
+ b:(p,r)=>r==='dat'?`Chào ${p[0]}, chúc mừng bạn đã đạt phỏng vấn vị trí ${p[1]} tại ${p[2]}.\nNgày nhận việc dự kiến: ${p[3]}. HR sẽ gửi hướng dẫn hồ sơ và ký hợp đồng.`:`Chào ${p[0]}, cảm ơn bạn đã tham gia phỏng vấn vị trí ${p[1]} tại ${p[2]}.\nRất tiếc lần này hồ sơ chưa phù hợp. Chúng tôi sẽ lưu thông tin của bạn cho các đợt tuyển tiếp theo.`,btn:'Xem chi tiết'},
+{k:'Thời gian làm việc',t:'Thông tin thời gian làm việc',w:'Gửi cho ứng viên đã đạt, trước ngày nhận việc.',
+ p:[['Tên nhân viên','Lan'],['Chi nhánh','Big C Miền Đông'],['Ngày bắt đầu','22/12/2026'],['Ca làm','Ca sáng 07:00 – 15:00'],['Người quản lý','Anh Minh - 090xxxxxxx']],
+ b:p=>`Chào ${p[0]}, thông tin làm việc của bạn:\n• Chi nhánh: ${p[1]}\n• Ngày bắt đầu: ${p[2]}\n• Ca làm: ${p[3]}\n• Quản lý trực tiếp: ${p[4]}\nBạn có mặt trước giờ làm 15 phút để nhận đồng phục.`,btn:'Xác nhận đã nhận'}];
+let zi=0,zr='dat';const zv={};
+Z.forEach((z,i)=>{const b=document.createElement('button');b.className='chip'+(i===0?' on':'');b.textContent=z.k;b.onclick=()=>{zi=i;$$('#zchips .chip').forEach((c,k)=>c.classList.toggle('on',k===i));drawZ()};$('#zchips').appendChild(b)});
+function drawZ(){const z=Z[zi];if(!zv[zi])zv[zi]=z.p.map(x=>x[1]);const v=zv[zi];
+$('#ztitle').textContent=z.k;$('#zwhen').textContent=z.w;
+let h=z.p.map((x,i)=>`<div><code>{${esc(x[0])}}</code></div><input data-i="${i}" value="${esc(v[i])}">`).join('');
+if(z.res)h=`<div>Kết quả</div><select id="zres"><option value="dat"${zr==='dat'?' selected':''}>Đạt</option><option value="khong"${zr==='khong'?' selected':''}>Chưa đạt</option></select>`+h;
+$('#zparams').innerHTML=h;
+$$('#zparams input').forEach(e=>e.oninput=()=>{v[+e.dataset.i]=e.value;prev()});
+const s=$('#zres');if(s)s.onchange=()=>{zr=s.value;prev()};prev()}
+function prev(){const z=Z[zi],v=zv[zi];$('#zprev').innerHTML=`<div class="zh"><div class="av">CR</div><div><b>Central Retail Tuyển dụng<em>ZBS</em></b>Thông báo từ OA</div></div><div class="zb"><div class="zt">${esc(z.t)}</div>${esc(z.b(v,zr))}</div><div class="zbtn">${esc(z.btn)}</div>`}
+drawZ();
+
+/* ops */
+
+
+/* scope */
+const SP=[
+['Zalo Ads nhắm theo khu vực, creative, nút nhắn tin','ok','Chốt khu vực, ngân sách; dựng creative theo GO! và Tops Market','ZBS + Central Retail','27/11'],
+['Zalo Ads dùng tệp SĐT ứng viên cũ','ok','Central Retail gửi file Excel mẫu (ẩn thông tin nhạy cảm); ZBS đánh giá và clean data','Central Retail','20/11'],
+['Zalo OA: chatbot menu, từ khóa, tin mẫu, nhãn','ok','Cấp quyền admin OA cho ZBS; chốt kịch bản menu và bảng từ khóa','Central Retail + ZBS','20/11'],
+['GMF (nhóm Zalo do OA quản lý)','ok','Xác nhận số nhóm và số thành viên tối đa theo gói Toàn diện đã mua','ZBS','18/11'],
+['ZBS Message Template: 5 mẫu tin (mời ứng tuyển, xác nhận, lịch PV, kết quả, thời gian làm việc)','ok','Soạn nội dung, nộp Zalo duyệt; lưu ý hạn chế loại mẫu tin cho tin mời hàng loạt','ZBS','Nộp 20/11'],
+['Google Form: đăng ký ứng tuyển (chọn GO! / Tops Market)','ok','Chốt các trường thông tin và danh sách chi nhánh theo từng thương hiệu','Central Retail + ZBS','24/11'],
+['Google Sheet/Excel trung tâm, cột HR, trạng thái, bộ lọc','ok','Dựng bảng mẫu; chia quyền xem theo chi nhánh; HR Admin giữ bảng phân công','ZBS + HR Admin','24/11'],
+['Google Form tự đổ về Sheet, kèm khu vực và vị trí điền sẵn','ok','Kiểm thử link điền sẵn từ chatbot và dòng ghi vào Sheet','ZBS','25/11'],
+['Gửi ZBS Message Template hàng loạt từ danh sách Excel','warn','Chốt cách gửi theo lô và người chịu trách nhiệm gửi','ZBS','25/11'],
+['Tự gửi ZBS Message Template khi đổi trạng thái trong Excel','no','Chưa làm; đánh giá lại sau chạy thử nếu HR thấy cần','—','Sau 18/12'],
+['Tự ghi nội dung chat OA vào Excel, bảng báo cáo tổng hợp nhiều chi nhánh','no','Chưa làm; xem xét sau chạy thử','—','Sau 18/12'],
+['Hệ thống quản lý ứng viên riêng (CRM/ATS)','no','Chưa cần cho mùa này; đánh giá lại sau Tết 2027','—','Sau Tết']];
+const lab={ok:'Có sẵn',warn:'Cần tích hợp nhẹ',no:'Cần phát triển / không đề xuất'};let flt='all';
+[['all','Tất cả'],['ok','Có sẵn'],['warn','Cần tích hợp'],['no','Cần phát triển']].forEach(([k,n])=>{const b=document.createElement('button');b.className='chip'+(k==='all'?' on':'');b.textContent=n;b.onclick=()=>{flt=k;$$('#chips .chip').forEach(c=>c.classList.toggle('on',c===b));drawS()};$('#chips').appendChild(b)});
+function drawS(){$('#scopeTbl tbody').innerHTML=SP.filter(r=>flt==='all'||r[1]===flt).map(r=>`<tr><td><b>${r[0]}</b></td><td><span class="pill p-${r[1]}">${lab[r[1]]}</span></td><td>${r[2]}</td><td>${r[3]}</td><td style="white-space:nowrap">${r[4]}</td></tr>`).join('')}
+drawS();
+
+/* old data cleaner */
+const OR=[['Nguyen Thi Lan','0901 234 567','HCM','GO! Gò Vấp','2025','Tốt'],['Nguyễn Thị Lan','+84901234567','Hồ Chí Minh','GO! Gò Vấp','2025','Tốt'],['Trần Văn B','09123','','Tops Quận 7','2024',''],['Lê Thị Hoa','0987.654.321','HN','GO! Thăng Long','2025','Tốt'],['Phạm Minh','84 912 345 678','Hà Nội','Tops Cầu Giấy','2023','Trung bình'],['Võ Anh Tuấn','0933 111 222','Đà Nẵng','GO! Đà Nẵng','2025','Tốt'],['Đỗ Thu','0977 888 999','TP.HCM','Tops Thảo Điền','2024','Tốt']];
+let cleaned=false;
+function cleanData(){const seen=new Set(),ok=[],bad=[];
+OR.forEach(r=>{let p=r[1].replace(/\D/g,'');if(p.startsWith('84'))p='0'+p.slice(2);
+if(p.length!==10||p[0]!=='0'){bad.push([r[0],'SĐT không hợp lệ']);return}
+if(seen.has(p)){bad.push([r[0],'Trùng SĐT']);return}seen.add(p);
+const a=/hcm|hồ chí minh/i.test(r[2])?'TP.HCM':/hn|hà nội/i.test(r[2])?'Hà Nội':r[2]||'Cần bổ sung';
+const g=r[5]==='Tốt'&&r[4]==='2025'?'A':(r[4]>='2024'?'B':'C');
+ok.push([r[0],p.replace(/(\d{4})(\d{3})(\d{3})/,'$1 $2 $3'),a,r[3],g])});return{ok,bad}}
+function drawOld(){const box=$('#oclean');
+if(!cleaned){box.innerHTML='<table><tr><th>Họ tên</th><th>SĐT (gốc)</th><th>Khu vực (gốc)</th><th>Chi nhánh</th><th>Mùa</th><th>Đánh giá</th></tr>'+OR.map(r=>'<tr>'+r.map(c=>'<td>'+(c||'<i style="color:var(--mut)">trống</i>')+'</td>').join('')+'</tr>').join('')+'</table><p class="note">File Excel gốc (dữ liệu minh họa): SĐT nhiều định dạng, trùng lặp, thiếu khu vực.</p>';$('#obtn').textContent='▶ Chạy clean data & phân nhóm'}
+else{const {ok,bad}=cleanData();const c=g=>ok.filter(r=>r[4]===g).length;
+box.innerHTML=`<div class="kp" style="margin-bottom:10px"><div class="card"><span>Hồ sơ gốc</span><b>${OR.length}</b></div><div class="card"><span>Giữ lại sau clean data</span><b>${ok.length}</b></div><div class="card"><span>Loại bỏ</span><b>${bad.length}</b></div></div>`+
+'<table><tr><th>Họ tên</th><th>SĐT chuẩn</th><th>Khu vực</th><th>Chi nhánh</th><th>Nhóm</th></tr>'+ok.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td><span class="pill p-${r[4]==='A'?'ok':r[4]==='B'?'warn':'no'}">${r[4]}</span></td></tr>`).join('')+'</table>'+
+`<p class="note">Nhóm A: ${c('A')} · Nhóm B: ${c('B')} · Nhóm C: ${c('C')}. Loại bỏ: ${bad.map(b=>b[0]+' ('+b[1]+')').join('; ')}.</p>`;$('#obtn').textContent='↺ Về file gốc'}}
+$('#obtn').onclick=()=>{cleaned=!cleaned;drawOld()};drawOld();
+
+/* budget */
+const BASE={other:300,auth:400,pay:300,rate:300,voucher:400};
+const TYPES={other:'Tùy chỉnh: xác nhận, giao dịch, hậu mãi (Customize)',auth:'Xác thực (Verification)',pay:'Yêu cầu thanh toán (Payment request)',rate:'Đánh giá dịch vụ, hóa đơn (Service rating, Bill)',voucher:'Ưu đãi, voucher (Promotion, Voucher)'};
+const CTA={none:['Không thêm',0],eco:['Trang OA, bài viết OA',0],web:['Website của doanh nghiệp (VD: Google Form)',100],call:['Gọi điện',200],ext:['Website doanh nghiệp khác',500],app:['Ứng dụng của doanh nghiệp',600],extapp:['Ứng dụng doanh nghiệp khác',1000],dl:['Trang tải ứng dụng',3000]};
+const BTN={eco:'Mở trang OA',web:'Mở Google Form',call:'Gọi điện',ext:'Mở website',app:'Mở ứng dụng',extapp:'Mở ứng dụng',dl:'Tải ứng dụng'};
+const IMG=300,RESP=100;
+const PKG=[{n:'Cơ bản',y:0,adv:0,g100:0},{n:'Tiêu chuẩn',y:1000000,adv:0,g100:0},{n:'Tăng trưởng',y:2500000,adv:500,g100:1},{n:'Toàn diện',y:6000000,adv:2000,g100:3}];
+const GP={g10:25000,g50:55000,g100:75000,g1000:300000};
+let ROWS=[
+{n:'Mời ứng tuyển (nhân viên cũ)',z:0,t:'other',c1:'web',c2:'none',img:false,resp:false,q:5000},
+{n:'Xác nhận hồ sơ',z:1,t:'other',c1:'none',c2:'none',img:false,resp:false,q:8000},
+{n:'Lịch phỏng vấn',z:2,t:'other',c1:'none',c2:'none',img:false,resp:true,q:5200},
+{n:'Nhắc lịch phỏng vấn',z:2,t:'other',c1:'none',c2:'none',img:false,resp:false,q:5200},
+{n:'Kết quả phỏng vấn',z:3,t:'other',c1:'none',c2:'none',img:false,resp:false,q:5200},
+{n:'Thời gian làm việc',z:4,t:'other',c1:'none',c2:'none',img:false,resp:false,q:4160}];
+const gv=id=>Math.max(0,+$(id).value||0);
+const vnd=n=>Math.round(n).toLocaleString('vi-VN')+'đ';
+const opts=(o,sel)=>Object.keys(o).map(k=>`<option value="${k}" ${k===sel?'selected':''}>${Array.isArray(o[k])?o[k][0]+(o[k][1]?' (+'+o[k][1].toLocaleString('vi-VN')+'đ)':''):o[k]}</option>`).join('');
+let zActive=0;
+function rowHtml(r){return `<div class="zrow"><button class="zdel" onclick="delRow(this)" aria-label="Xóa mẫu tin">×</button>
+<div><label>Tên mẫu tin</label><input type="text" class="zn" value="${esc(r.n)}"></div>
+<div><label>Loại mẫu tin</label><select class="zt">${opts(TYPES,r.t)}</select></div>
+<div><label>Nút bấm thêm 1</label><select class="zc1">${opts(CTA,r.c1)}</select></div>
+<div><label>Nút bấm thêm 2</label><select class="zc2">${opts(CTA,r.c2)}</select></div>
+<div><label>Thành phần thêm</label><div class="zopts"><label class="chk"><input type="checkbox" class="zi" ${r.img?'checked':''}>Hình ảnh +${IMG}đ</label><label class="chk"><input type="checkbox" class="zr" ${r.resp?'checked':''}>Nút phản hồi +${RESP}đ</label></div></div>
+<div><label>Số lượng (cả chiến dịch)</label><input type="number" class="zq" min="0" value="${r.q}"></div>
+<div class="zout"><b class="zsum">0đ</b><small class="zbk"></small></div></div>`}
+function renderRows(rows){$('#zRows').innerHTML=rows.map(rowHtml).join('');$$('#zRows .zrow').forEach((el,i)=>{el._z=rows[i].z;el.addEventListener('click',()=>{zActive=i;budget()});el.addEventListener('focusin',()=>{if(zActive!==i){zActive=i;budget()}})});if(zActive>=rows.length)zActive=Math.max(0,rows.length-1);$$('#zRows input,#zRows select').forEach(e=>{e.oninput=budget;e.onchange=budget});budget()}
+function readRows(){return $$('#zRows .zrow').map(el=>({n:el.querySelector('.zn').value,z:el._z,t:el.querySelector('.zt').value,c1:el.querySelector('.zc1').value,c2:el.querySelector('.zc2').value,img:el.querySelector('.zi').checked,resp:el.querySelector('.zr').checked,q:Math.max(0,+el.querySelector('.zq').value||0)}))}
+function addRow(){const r=readRows();r.push({n:'Mẫu tin mới',z:1,t:'other',c1:'none',c2:'none',img:false,resp:false,q:100});zActive=r.length-1;renderRows(r)}
+function delRow(btn){const els=$$('#zRows .zrow');const i=els.indexOf(btn.closest('.zrow'));const r=readRows();r.splice(i,1);zActive=0;renderRows(r)}
+function unitOf(r){let eco=0,cta=0;for(const c of [r.c1,r.c2]){if(c==='none')continue;if(c==='eco'){cta+=eco===0?0:100;eco++}else cta+=CTA[c][1]}
+const parts=[[TYPES[r.t].split(':')[0].split(' (')[0],BASE[r.t]]];if(r.img)parts.push(['hình ảnh',IMG]);if(r.resp)parts.push(['nút phản hồi',RESP]);if(cta)parts.push(['nút bấm thêm',cta]);
+return{unit:parts.reduce((a,x)=>a+x[1],0),parts}}
+function prevZ(r,u){if(!r){$('#zPrev').innerHTML='';return}const z=Z[r.z],v=z.p.map(x=>x[1]);
+const btns=[z.btn].concat([r.c1,r.c2].filter(c=>c!=='none').map(c=>BTN[c]));
+$('#zPrev').innerHTML=`<div class="zns"><div class="zh"><div class="av">CR</div><div><b>Tuyển dụng Central Retail<em>ZBS</em></b>Thông báo từ OA</div></div>${r.img?'<div class="zimg">Hình ảnh</div>':''}<div class="zb"><div class="zt">${esc(z.t)}</div>${esc(z.b(v,'dat'))}</div>${btns.map(b=>`<div class="zbtn">${esc(b)}</div>`).join('')}${r.resp?'<div class="zbtn" style="border-style:dashed">Nút phản hồi</div>':''}</div>`+
+`<div class="pvcap"><b>${esc(r.n)}</b><br>${u.parts.map(x=>x[0]+' '+x[1].toLocaleString('vi-VN')+'đ').join(' + ')}<br>Đơn giá <b>${u.unit.toLocaleString('vi-VN')}đ</b> mỗi tin</div>`}
+const PH=[['Chạy thử (30/11–18/12)',10],['Đợt 1 mở rộng',50],['Đợt 2',40]];const pv=PH.map(x=>x[1]);let lastTot=0;
+function drawPh(tot){lastTot=tot;PH.forEach((x,k)=>{const rw=$('#ph'+k);if(rw){rw.querySelector('.p').textContent=pv[k]+'%';rw.querySelector('.a').textContent=vnd(tot*pv[k]/100);rw.querySelector('input').value=pv[k]}})}
+PH.forEach((x,k)=>{const r=document.createElement('div');r.className='row';r.id='ph'+k;r.innerHTML=`<div>${x[0]}</div><input type="range" min="0" max="100" value="${x[1]}"><div class="p"></div><div class="a"></div>`;r.querySelector('input').oninput=e=>{const v=+e.target.value,o=pv.slice(),s=o.reduce((a,b,i)=>i===k?a:a+b,0),rest=100-v;
+const n=o.map((y,i)=>i===k?v:(s===0?rest/2:y*rest/s)).map(Math.round);let d=100-n.reduce((a,b)=>a+b,0);let m=0,mv=-1;n.forEach((y,i)=>{if(i!==k&&y>mv){mv=y;m=i}});n[m]+=d;n.forEach((y,i)=>pv[i]=y);drawPh(lastTot)};$('#phs').appendChild(r)});
+function budget(){const pk=PKG[+$('#bPkg').value],vat=$('#bVat').checked?1.1:1,mo=Math.max(1,gv('#bMonths')),owned=$('#bOwned').checked;
+const rows=readRows();let qty=0,zbsEx=0;
+$$('#zRows .zrow').forEach((el,i)=>{const r=rows[i],u=unitOf(r),sum=u.unit*r.q;qty+=r.q;zbsEx+=sum;el.querySelector('.zsum').textContent=vnd(sum);el.querySelector('.zbk').textContent=u.parts.map(x=>x[1].toLocaleString('vi-VN')).join(' + ')+' = '+u.unit.toLocaleString('vi-VN')+'đ mỗi tin';el.classList.toggle('act',i===zActive)});
+prevZ(rows[zActive],rows[zActive]?unitOf(rows[zActive]):null);
+$('#kQty').textContent=qty.toLocaleString('vi-VN');$('#kAvg').textContent=vnd(qty?zbsEx/qty:0);$('#kZbs').textContent=vnd(zbsEx);
+const zbs=zbsEx*vat,pkg=owned?0:pk.y/12*mo,total=zbs+pkg;
+const trs=[['Gói dịch vụ OA '+pk.n+(owned?' (đã mua, không tính thêm)':' (chia theo '+mo+' tháng)'),null,null,pkg],['ZBS Message Template'+(vat>1?' (đã cộng VAT 10%)':''),qty,null,zbs]];
+$('#bTable').innerHTML='<tr><th>Hạng mục</th><th class="num">Số lượng</th><th class="num">Đơn giá</th><th class="num">Cả chiến dịch</th></tr>'+trs.map(r=>`<tr><td>${r[0]}</td><td class="num">${r[1]===null?'':r[1].toLocaleString('vi-VN')}</td><td class="num">${r[2]===null?'':vnd(r[2])}</td><td class="num">${vnd(r[3])}</td></tr>`).join('')+`<tr class="tot"><td colspan="3">Tổng ngân sách chiến dịch (${mo} tháng)</td><td class="num">${vnd(total)}</td></tr>`;
+const parts=[['Gói dịch vụ OA',pkg,'#C3CCDA'],['ZBS Message Template',zbs,'#0F1B33']];
+$('#bBar').innerHTML=total?parts.map(x=>`<span style="width:${x[1]/total*100}%;background:${x[2]}"></span>`).join(''):'';
+$('#bLegend').innerHTML=parts.map(x=>`<span><i style="background:${x[2]}"></i>${x[0]} ${total?Math.round(x[1]/total*100):0}%</span>`).join('');
+drawPh(total)}
+$$('#t-budget .grid2 input,#t-budget .grid2 select').forEach(e=>{e.addEventListener('input',budget);e.addEventListener('change',budget)});
+renderRows(ROWS);
+</script>
+</body>
+</html>
